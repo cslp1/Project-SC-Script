@@ -14,5 +14,20 @@ return function()
         workspace.Towers.ToAST.Obby:GetChildren()[157],
         workspace.Towers.ToAST.Obby:GetChildren()[150],
         workspace.Towers.ToAST.Obby:GetChildren()[155],
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[49]["Kill Brick"],
+        workspace.Towers.ToAST.Obby:GetChildren()[120],
+        workspace.Towers.ToAST.Obby:GetChildren()[123],
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[22].Part,
+        workspace.Towers.ToAST.Obby:GetChildren()[125],
+        workspace.Towers.ToAST.Obby:GetChildren()[135],
+        workspace.Towers.ToAST.Obby:GetChildren()[126],
+        workspace.Towers.ToAST.Obby:GetChildren()[127],
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[26].Part,
+        workspace.Towers.ToAST.Obby:GetChildren()[1019],
+        workspace.Towers.ToAST.Obby:GetChildren()[1025],
+        workspace.Towers.ToAST.Obby:GetChildren()[936],
+        workspace.Towers.ToAST.Obby:GetChildren()[1031],
+        workspace.Towers.ToAST.Obby:GetChildren()[224],
+        
     }
 end
