@@ -139,7 +139,7 @@ return function()
         workspace.Towers.ToAST.Obby:GetChildren()[34],
         workspace.Towers.ToAST.Obby:GetChildren()[706],
         workspace.ClientParts.DistanceAnchoringObjects["Top Heavy Platform"]:GetChildren()[3],
-        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[47].Model.Part,
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[47]:GetChildren()[3],
         workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[53]:GetChildren()[3],
         workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[30].Part,
         workspace.Towers.ToAST.Obby:GetChildren()[794],
