@@ -318,7 +318,13 @@ return function()
         workspace.Towers.ToAST.Obby:GetChildren()[41],
         workspace.ClientParts["Moving Platform"].Positions.a1,
         workspace.ClientParts["Moving Platform"].Positions.a2,
-        workspace.Towers.ToAST.Obby:GetChildren()[51]
+        workspace.Towers.ToAST.Obby:GetChildren()[51],
+        workspace.Towers.ToAST.Obby:GetChildren()[42],
+        workspace.ClientParts.LightingChangers:GetChildren()[5],
+        workspace.Towers.ToAST.Obby.Light,
+        workspace.Towers.ToAST.Obby.Fireflies,
+        workspace.Towers.ToAST.Obby:GetChildren()[44],
+        workspace.Towers.ToAST.WinPad
         
         
         
