@@ -110,7 +110,33 @@ return function()
         workspace.Towers.ToNI.Obby:GetChildren()[431],
         workspace.Towers.ToNI.Obby:GetChildren()[433],
         workspace.Towers.ToNI.Obby:GetChildren()[435],
-        workspace.Towers.ToNI.Obby:GetChildren()[434]
+        workspace.Towers.ToNI.Obby:GetChildren()[434], --F5
+        workspace.Towers.ToNI.Obby:GetChildren()[445],
+        workspace.Towers.ToNI.Obby:GetChildren()[446],
+        workspace.Towers.ToNI.Obby:GetChildren()[455],
+        workspace.Towers.ToNI.Obby:GetChildren()[448],
+        workspace.Towers.ToNI.Obby:GetChildren()[452],
+        workspace.Towers.ToNI.Obby:GetChildren()[468],
+        workspace.Towers.ToNI.Obby:GetChildren()[469],
+        workspace.Towers.ToNI.Obby:GetChildren()[476],
+        workspace.Towers.ToNI.Obby:GetChildren()[477],
+        workspace.Towers.ToNI.Obby:GetChildren()[460],
+        workspace.Towers.ToNI.Obby:GetChildren()[481],
+        workspace.Towers.ToNI.Obby:GetChildren()[484],
+        workspace.Towers.ToNI.Obby:GetChildren()[485],
+        workspace.Towers.ToNI.Obby:GetChildren()[486],
+        workspace.Towers.ToNI.Obby:GetChildren()[491],
+        workspace.Towers.ToNI.Obby:GetChildren()[493],
+        workspace.Towers.ToNI.Obby:GetChildren()[1195],
+        workspace.Towers.ToNI.Obby:GetChildren()[506],
+        workspace.Towers.ToNI.Obby:GetChildren()[529],
+        workspace.Towers.ToNI.Obby:GetChildren()[530],
+        workspace.Towers.ToNI.Obby:GetChildren()[531],
+        workspace.Towers.ToNI.Obby:GetChildren()[440],
+        workspace.Towers.ToNI.Obby:GetChildren()[437],
+        workspace.Towers.ToNI.Obby:GetChildren()[364],
+        workspace.Towers.ToNI.Obby:GetChildren()[557]
+        
         
     
     }
