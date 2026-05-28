@@ -166,7 +166,25 @@ return function()
         workspace.Towers.ToM.Obby:GetChildren()[639],
         workspace.Towers.ToM.Obby:GetChildren()[634],
         workspace.Towers.ToM.Obby.Model:GetChildren()[5], --F8
-        workspace.Towers.ToM.Obby:GetChildren()[653]
+        workspace.Towers.ToM.Obby:GetChildren()[653],
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[42].Part,
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[7]:GetChildren()[2],
+        workspace.Towers.ToM.Obby:GetChildren()[672],
+        workspace.Towers.ToM.Obby:GetChildren()[669],
+        workspace.Towers.ToM.Obby:GetChildren()[721],
+        workspace.Towers.ToM.Obby:GetChildren()[691],
+        workspace.Towers.ToM.Obby:GetChildren()[665],
+        workspace.Towers.ToM.Obby:GetChildren()[679],
+        workspace.Towers.ToM.Obby:GetChildren()[681],
+        workspace.Towers.ToM.Obby:GetChildren()[663],
+        workspace.Towers.ToM.Obby:GetChildren()[697],
+        workspace.Towers.ToM.Obby:GetChildren()[696],
+        workspace.Towers.ToM.Obby:GetChildren()[664],
+        workspace.Towers.ToM.Obby:GetChildren()[720],
+        workspace.Towers.ToM.Obby:GetChildren()[729],
+        workspace.Towers.ToM.Obby:GetChildren()[671],
+        workspace.Towers.ToM.Obby:GetChildren()[701],
+        workspace.Towers.ToM.Obby:GetChildren()[704]
         
         
 
