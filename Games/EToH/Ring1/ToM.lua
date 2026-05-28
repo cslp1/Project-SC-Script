@@ -204,11 +204,17 @@ return function()
         workspace.Towers.ToM.Obby:GetChildren()[766],
         workspace.Towers.ToM.Obby:GetChildren()[782],
         workspace.Towers.ToM.Obby:GetChildren()[776],
-        workspace.Towers.ToM.Obby:GetChildren()[778]
-        
-        
-
-        
-        
+        workspace.Towers.ToM.Obby:GetChildren()[778], --F10
+        workspace.Towers.ToM.Obby:GetChildren()[772],
+        workspace.Towers.ToM.Obby:GetChildren()[786],
+        workspace.Towers.ToM.Obby:GetChildren()[795],
+        workspace.Towers.ToM.Obby:GetChildren()[793],
+        workspace.Towers.ToM.Obby:GetChildren()[236],
+        workspace.ClientParts.KillBricks:GetChildren()[180],
+        workspace.Towers.ToM.Obby:GetChildren()[804],
+        workspace.Towers.ToM.Obby:GetChildren()[805],
+        workspace.Towers.ToM.Obby:GetChildren()[809],
+        workspace.Towers.ToM.Obby:GetChildren()[816],
+        workspace.Towers.ToM.WinPad     
     }
 end
