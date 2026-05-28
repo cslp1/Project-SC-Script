@@ -160,7 +160,41 @@ return function()
         workspace.Towers.ToNI.Obby:GetChildren()[642],
         workspace.Towers.ToNI.Obby:GetChildren()[648],
         workspace.Towers.ToNI.Obby:GetChildren()[649],
-        workspace.Towers.ToNI.Obby:GetChildren()[640]
+        workspace.Towers.ToNI.Obby:GetChildren()[640], --F7
+        workspace.Towers.ToNI.Obby:GetChildren()[655],
+        workspace.Towers.ToNI.Obby:GetChildren()[659],
+        workspace.Towers.ToNI.Obby:GetChildren()[667],
+        workspace.Towers.ToNI.Obby:GetChildren()[679],
+        workspace.Towers.ToNI.Obby:GetChildren()[682],
+        workspace.Towers.ToNI.Obby:GetChildren()[681],
+        workspace.Towers.ToNI.Obby:GetChildren()[685],
+        workspace.Towers.ToNI.Obby:GetChildren()[695],
+        workspace.Towers.ToNI.Obby:GetChildren()[700],
+        workspace.Towers.ToNI.Obby:GetChildren()[704],
+        workspace.Towers.ToNI.Obby:GetChildren()[705],
+        workspace.Towers.ToNI.Obby:GetChildren()[706],
+        workspace.Towers.ToNI.Obby:GetChildren()[708],
+        workspace.Towers.ToNI.Obby:GetChildren()[709],
+        workspace.Towers.ToNI.Obby:GetChildren()[714],
+        workspace.Towers.ToNI.Obby:GetChildren()[716],
+        workspace.Towers.ToNI.Obby:GetChildren()[717],
+        workspace.Towers.ToNI.Obby:GetChildren()[719],
+        workspace.Towers.ToNI.Obby:GetChildren()[721],
+        workspace.Towers.ToNI.Obby:GetChildren()[726],
+        workspace.Towers.ToNI.Obby:GetChildren()[744],
+        workspace.Towers.ToNI.Obby:GetChildren()[745],
+        workspace.Towers.ToNI.Obby:GetChildren()[749],
+        workspace.Towers.ToNI.Obby:GetChildren()[665],
+        workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[29]:GetChildren()[2],
+        workspace.Towers.ToNI.Obby:GetChildren()[769],
+        workspace.Towers.ToNI.Obby.Wedge,
+        workspace.Towers.ToNI.Obby:GetChildren()[779],
+        workspace.Towers.ToNI.Obby:GetChildren()[794],
+        workspace.Towers.ToNI.Obby:GetChildren()[750],
+        workspace.Towers.ToNI.Obby:GetChildren()[767],
+        workspace.Towers.ToNI.Obby:GetChildren()[771],
+        workspace.Towers.ToNI.Obby:GetChildren()[774]
+        
         
         
     
