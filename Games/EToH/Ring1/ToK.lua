@@ -3,7 +3,7 @@ return function()
         workspace.Towers.ToK.Obby:GetChildren()[19],
         workspace.Towers.ToK.Obby:GetChildren()[23],
         workspace.Towers.ToK.Obby:GetChildren()[31],
-        workspace.ClientParts:GetChildren()[18].Part
+        workspace.ClientParts:GetChildren()[18].Part,
         workspace.ClientParts.PushingPlatform:GetChildren()[2],
         workspace.Towers.ToK.Obby:GetChildren()[259],
         workspace.Towers.ToK.Obby:GetChildren()[463],
