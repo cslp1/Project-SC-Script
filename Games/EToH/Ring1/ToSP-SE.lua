@@ -175,10 +175,41 @@ return function()
         workspace.Towers.ToSP.Obby:GetChildren()[351],
         workspace.Towers.ToSP.Obby:GetChildren()[26],
         workspace.Towers.ToSP.Obby:GetChildren()[116],
-        workspace.TowerPlatforms.ToSP:GetChildren()[3], --F10
-    
-        
-        
+        workspace.TowerPlatforms.ToSP:GetChildren()[3], --F10(SE)
+        workspace.Towers.ToSP.Frame:GetChildren()[12],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[9],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[25],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[26],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[27],
+        workspace.ClientParts:GetChildren()[29].Platform,
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[34],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[33],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[42],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[45],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[48],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[50],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[63],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[64],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[67],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[84],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[85],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[99],
+        workspace.ClientParts.DistanceAnchoringObjects["Single Rope Platform"].Part,
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[102],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[95],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[7]:GetChildren()[2],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[104],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[105],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[116],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[122],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[125],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[128],
+        workspace.ClientParts:GetChildren()[35].Platform,
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[132],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[5],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[89],
+        workspace.Towers.ToSP.Obby.Obby:GetChildren()[88],
+        workspace.Towers.ToSP.WinPadSE
 
     }
 end
