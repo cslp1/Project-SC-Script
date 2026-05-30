@@ -227,7 +227,7 @@ return function()
         workspace.Towers.ToIE.Obby:GetChildren()[683],
         workspace.ClientParts.DistanceAnchoringObjects["Spinning Platform"].Part,
         workspace.Towers.ToIE.Obby:GetChildren()[655], --F10
-        workspace.Towers.ToIE.Obby:GetChildren()[43112],
+        workspace.Towers.ToIE.Obby:GetChildren()[432],
         workspace.Towers.ToIE.WinPad
         
         
