@@ -400,7 +400,36 @@ return function()
         workspace.ClientParts.ButtonPlatforms.F8ButtonRush:GetChildren()[81],
         workspace.Towers.CoLS.Obby:GetChildren()[712],
         workspace.Towers.CoLS.Obby:GetChildren()[715],
-        workspace.Towers.CoLS.Obby:GetChildren()[716] --F11
+        workspace.Towers.CoLS.Obby:GetChildren()[716], --F11
+        workspace.Towers.CoLS.Obby:GetChildren()[719],
+        workspace.Towers.CoLS.Obby:GetChildren()[720],
+        workspace.Towers.CoLS.Obby:GetChildren()[724],
+        workspace.Towers.CoLS.Obby:GetChildren()[725],
+        workspace.ClientParts.DistanceAnchoringObjects["Wobbly Plate"].ColorChangingPart,
+        workspace.ClientParts:GetChildren()[129].Platform,
+        workspace.ClientParts:GetChildren()[128].Platform,
+        workspace.Towers.CoLS.Obby:GetChildren()[727],
+        workspace.Towers.CoLS.Obby:GetChildren()[854],
+        workspace.Towers.CoLS.Obby:GetChildren()[856],
+        workspace.ClientParts:GetChildren()[41]:GetChildren()[2],
+        workspace.ClientParts.ButtonPlatforms.F8ButtonRush:GetChildren()[5],
+        workspace.ClientParts.ButtonPlatforms.F8ButtonRush:GetChildren()[7],
+        workspace.ClientParts.ButtonPlatforms.F8ButtonRush.ButtonActivatedPlatform,
+        workspace.ClientParts.ButtonPlatforms.F8ButtonRush:GetChildren()[4],
+        workspace.Towers.CoLS.Obby:GetChildren()[731],
+        workspace.Towers.CoLS.Obby:GetChildren()[732],
+        workspace.Towers.CoLS.Obby:GetChildren()[734],
+        workspace.Towers.CoLS.Obby:GetChildren()[735],
+        workspace.Towers.CoLS.Obby:GetChildren()[737],
+        workspace.Towers.CoLS.Obby:GetChildren()[738],
+        workspace.Towers.CoLS.Obby:GetChildren()[739],
+        workspace.Towers.CoLS.Obby:GetChildren()[740], --F12
+        workspace.Towers.CoLS.Obby:GetChildren()[743],
+        workspace.Towers.CoLS.Obby:GetChildren()[745],
+        workspace.Towers.CoLS.Obby:GetChildren()[746],
+        workspace.Towers.CoLS.Obby:GetChildren()[769],
+        workspace.Towers.CoLS.Obby:GetChildren()[768],
+        workspace.Towers.CoLS.Obby:GetChildren()[770]
         
     }
 end
