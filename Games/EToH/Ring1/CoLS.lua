@@ -49,8 +49,6 @@ return function()
         workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[71].Platform,
         workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[49]:GetChildren()[2],
         workspace.ClientParts.DistanceAnchoringObjects:GetChildren()[47]:GetChildren()[2],
-        workspace.ClientParts:GetChildren()[70],
-        workspace.ClientParts:GetChildren()[70],
         workspace.ClientParts.DistanceAnchoringObjects["Loose Platform"]:GetChildren()[2]
         
 
