@@ -129,7 +129,41 @@ return function()
         workspace.Towers.ToIG.Obby:GetChildren()[457],
         workspace.Towers.ToIG.Obby:GetChildren()[490],
         workspace.Towers.ToIG.Obby:GetChildren()[562],
-        workspace.ClientParts.DistanceCulling:GetChildren()[16].Primary --F4
+        workspace.ClientParts.DistanceCulling:GetChildren()[16].Primary, --F4
+        workspace.Towers.ToIG.Obby:GetChildren()[614],
+        workspace.ClientParts:GetChildren()[39].Primary,
+        workspace.ClientParts:GetChildren()[38].Primary,
+        workspace.Towers.ToIG.Obby:GetChildren()[761],
+        workspace.ClientParts:GetChildren()[262],
+        workspace.ClientParts.Conveyor,
+        workspace.Towers.ToIG.Obby:GetChildren()[1316],
+        workspace.Towers.ToIG.Obby:GetChildren()[625],
+        workspace.ClientParts["Spinning Platform"].Primary,
+        workspace.Towers.ToIG.Obby:GetChildren()[733],
+        workspace.ClientParts:GetChildren()[35].Primary,
+        workspace.ClientParts:GetChildren()[36].Primary,
+        workspace.Towers.ToIG.Obby:GetChildren()[1402],
+        workspace.Towers.ToIG.Obby:GetChildren()[1319],
+        workspace.Towers.ToIG.Obby:GetChildren()[633],
+        workspace.Towers.ToIG.Obby:GetChildren()[635],
+        workspace.ClientParts:GetChildren()[40].Primary,
+        workspace.ClientParts:GetChildren()[23].Vanisher,
+        workspace.Towers.ToIG.Obby:GetChildren()[590],
+        workspace.Towers.ToIG.Obby:GetChildren()[1049],
+        workspace.ClientParts:GetChildren()[304],
+        workspace.ClientParts:GetChildren()[258],
+        workspace.Towers.ToIG.Obby:GetChildren()[667],
+        workspace.Towers.ToIG.Obby:GetChildren()[671],
+        workspace.ClientParts:GetChildren()[44].Primary,
+        workspace.ClientParts:GetChildren()[44]:GetChildren()[7],
+        workspace.Towers.ToIG.Obby:GetChildren()[1722],
+        workspace.ClientParts:GetChildren()[47].Primary,
+        workspace.ClientParts:GetChildren()[48].Primary,
+        workspace.ClientParts:GetChildren()[48].Base,
+        workspace.Towers.ToIG.Frame.Frame.Floor2:GetChildren()[5],
+        workspace.Towers.ToIG.Obby:GetChildren()[541],
+        workspace.Towers.ToIG.Frame.Frame.Floor2:GetChildren()[33] --F6A
+        
         
         
     }
