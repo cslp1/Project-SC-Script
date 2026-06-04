@@ -23,6 +23,7 @@ return {
         { name = "CoLS:SE", category = "Ring1", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToTS",  category = "Ring1", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToIG",  category = "Ring1", suggestedTime = { min = "5", sec = "0" } },
+        { name = "MAT",  category = "Ring2", suggestedTime = { min = "0", sec = "5" } },
         { name = "ToPS",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToBH",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToOH",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
