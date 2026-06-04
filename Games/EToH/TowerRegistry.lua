@@ -22,13 +22,14 @@ return {
         { name = "CoLS",  category = "Ring1", suggestedTime = { min = "3", sec = "0" } },
         { name = "CoLS:SE", category = "Ring1", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToTS",  category = "Ring1", suggestedTime = { min = "3", sec = "0" } },
-        { name = "ToIG",  category = "Ring1", suggestedTime = { min = "3", sec = "0" } },
+        { name = "ToIG",  category = "Ring1", suggestedTime = { min = "5", sec = "0" } },
         { name = "ToPS",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToBH",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToOH",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToCH",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToFaF",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToT",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
+        { name = "ToSD",  category = "Ring2", suggestedTime = { min = "3", sec = "0" } },
         
     },
     TowerRush = {
