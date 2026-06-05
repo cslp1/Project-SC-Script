@@ -2535,7 +2535,6 @@ return function()
         workspace.Towers.CoWS.Obby:GetChildren()[1896],
         workspace.ClientParts:GetChildren()[127]:GetChildren()[3],
         workspace.ClientParts:GetChildren()[127]:GetChildren()[2],
-        workspace.ClientParts:GetChildren()[52]:GetChildren()[1],
         workspace.ClientParts:GetChildren()[52]:GetChildren()[2],
         workspace.Towers.CoWS.Obby:GetChildren()[3383],
         workspace.Towers.CoWS.Obby:GetChildren()[3377],
@@ -2551,4 +2550,10 @@ workspace.ClientParts:GetChildren()[51]:GetChildren()[1],
 workspace.ClientParts:GetChildren()[51]:GetChildren()[5],
 workspace.Towers.CoWS.Obby:GetChildren()[3383]
 workspace.ClientParts["Cooler tp"].CoolerDestination
+workspace.ClientParts["Cooler tp"].CoolerTP
+return function()
+    return {
+        workspace.ClientParts:GetChildren()[52]:GetChildren()[1]
+    }
+end
 --]]
