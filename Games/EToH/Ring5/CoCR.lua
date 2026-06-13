@@ -452,7 +452,6 @@ return function()
         workspace.Towers.CoCR.Obby:GetChildren()[5226],
         workspace.Towers.CoCR.Obby:GetChildren()[5225],
         workspace.ClientParts.Morphers.Morpher:GetChildren()[2]:GetChildren()[1],
-        workspace.ClientParts.Morphers.Morpher:GetChildren()[3],
         workspace.ClientParts.Morphers.Morpher:GetChildren()[8],
         workspace.ClientParts.Morphers.Morpher:GetChildren()[7],
         workspace.ClientParts.Morphers.Morpher:GetChildren()[9],
