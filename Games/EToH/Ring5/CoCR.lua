@@ -199,7 +199,6 @@ return function()
         workspace.ClientParts.ButtonPlatforms:GetChildren()[21],
         workspace.ClientParts.ButtonPlatforms:GetChildren()[22],
         workspace.ClientParts.ButtonPlatforms:GetChildren()[23],
-        workspace.ClientParts:GetChildren()[84]:GetChildren()[6]:GetChildren()[1],
         workspace.ClientParts:GetChildren()[84]:GetChildren()[6]:GetChildren()[2],
         workspace.ClientParts:GetChildren()[84]:GetChildren()[6]:GetChildren()[8],
         workspace.ClientParts:GetChildren()[84]:GetChildren()[6]:GetChildren()[3],
