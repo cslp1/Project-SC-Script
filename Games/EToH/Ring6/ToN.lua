@@ -133,8 +133,6 @@ return function()
         workspace.Towers.ToN.Obby:GetChildren()[707],
         workspace.Towers.ToN.Obby:GetChildren()[708],
         workspace.Towers.ToN.Obby:GetChildren()[709],
-        workspace.ClientParts:GetChildren()[6]:GetChildren()[5]:GetChildren()[1]:GetChildren()[1],
-        workspace.ClientParts:GetChildren()[6]:GetChildren()[5]:GetChildren()[3]:GetChildren()[1],
         workspace.Towers.ToN.Obby:GetChildren()[859],
         workspace.Towers.ToN.Obby:GetChildren()[860],
         workspace.Towers.ToN.Obby:GetChildren()[861],
