@@ -1,11 +1,5 @@
 return function()
     return {
-        workspace.Towers.CoSR:GetChildren()[2]:GetChildren()[54],
-        workspace.ClientParts.KillBricks:GetChildren()[93]
-    }
-end
-return function()
-    return {
         workspace.Towers.CoSR.Obby:GetChildren()[1087],
         workspace.Towers.CoSR.Obby:GetChildren()[1198],
         workspace.Towers.CoSR.Obby:GetChildren()[1403],
