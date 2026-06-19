@@ -6,6 +6,7 @@ local Categories = {
     Ring5 = 9070980846,
     Ring6 = 9070981164,
     Ring9 = 9070982474,
+    Zone1 = 9071001075,
     Zone3 = 9071001563,
     ["Pit-of-Misery"] = 15639952229,
 }
@@ -104,6 +105,8 @@ return {
         { name = "ToBBB",  category = "Ring9", suggestedTime = { min = "3", sec = "0" } },
         { name = "CoL",  category = "Ring9", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToBT",  category = "Ring9", suggestedTime = { min = "3", sec = "0" } },
+        --Zone 1
+        { name = "ToTL",  category = "Zone1", suggestedTime = { min = "1", sec = "0" } },
         --Zone 3
         { name = "ToHH",  category = "Zone3", suggestedTime = { min = "3", sec = "0" } },
         --Pit of Misery
