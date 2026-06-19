@@ -7,7 +7,7 @@ local Categories = {
     Ring6 = 9070981164,
     Ring9 = 9070982474,
     Zone3 = 9071001563,
-    Pit-of-Misery = 15639952229,
+    ["Pit-of-Misery"] = 15639952229,
 }
 
 return {
