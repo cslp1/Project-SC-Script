@@ -6,6 +6,7 @@ local Categories = {
     Ring4 = 9070980555,
     Ring5 = 9070980846,
     Ring6 = 9070981164,
+    Ring7 = 9070981409,
     Ring9 = 9070982474,
     Zone1 = 9071001075,
     Zone3 = 9071001563,
@@ -104,6 +105,8 @@ return {
         { name = "ToN",  category = "Ring6", suggestedTime = { min = "3", sec = "0" } },
         { name = "CoSR",  category = "Ring6", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToIM",  category = "Ring6", suggestedTime = { min = "3", sec = "0" } },
+        --Ring 7
+        { name = "ToER",  category = "Ring7", suggestedTime = { min = "3", sec = "30" } },
         --Ring 9
         { name = "ToGO",  category = "Ring9", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToBBB",  category = "Ring9", suggestedTime = { min = "3", sec = "0" } },
