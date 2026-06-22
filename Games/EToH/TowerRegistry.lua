@@ -38,6 +38,8 @@ return {
         { name = "ToBT",  category = "Ring9", suggestedTime = { min = "3", sec = "0" } },
         --Zone 1
         { name = "ToTL",  category = "Zone1", suggestedTime = { min = "1", sec = "0" } },
+        { name = "SAT",  category = "Zone1", suggestedTime = { min = "3", sec = "0" } },
+        { name = "ToZD",  category = "Zone1", suggestedTime = { min = "3", sec = "0" } },
         --Zone 2
         { name = "ToDT",  category = "Zone2", suggestedTime = { min = "5", sec = "0" } },
         --Zone 3
