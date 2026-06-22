@@ -49,4 +49,4 @@ return {
         { name = "ToWM",  category = "Pit-of-Misery", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToBF",  category = "Pit-of-Misery", suggestedTime = { min = "3", sec = "0" } },
     },
-end
+ }
