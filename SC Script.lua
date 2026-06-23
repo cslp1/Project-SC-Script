@@ -84,7 +84,7 @@ local gameConfigs = {
     },
     {
         folder   = "st",
-        placeIds = { 72577867400900 },
+        placeIds = { 72577867400900, 129965911879791 },
     },
 }
 }
