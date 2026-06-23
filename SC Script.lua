@@ -174,10 +174,17 @@ for _, tower in ipairs(Registry.Towers) do
     SuggestedTimes[n] = tower.suggestedTime
     local tpName = getTpFrameName(n)
     if selectedFolder == "st" then
+        local portalIndex = tower.portalIndex
         TowerConfigs[n] = {
-            tpFrame    = function() return findNearestPortal(tpName) end,
-            teleportTo = function() return findNearestPortal(tpName) end,
-            routeUrl   = baseRepo .. tower.category .. "/" .. n .. ".lua",
+            tpFrame = function()
+                if portalIndex then return workspace.Portals:GetChildren()[portalIndex] end
+                return findNearestPortal(tpName)
+            end,
+            teleportTo = function()
+                if portalIndex then return workspace.Portals:GetChildren()[portalIndex] end
+                return findNearestPortal(tpName)
+            end,
+            routeUrl = baseRepo .. tower.category .. "/" .. n .. ".lua",
         }
     else
         TowerConfigs[n] = {
