@@ -74,34 +74,8 @@ local Options  = Library.Options
 local isAutoPlaying = false
 local currentResolvedSteps = nil
 
--- === FANGAME CONFIG ===
--- To add a new fangame: add a new entry to gameConfigs with the folder name
--- and all Place IDs used by that game, then create the matching files in the repo.
-local gameConfigs = {
-    {
-        folder   = "EToH",
-        placeIds = { 9070657865, 9070979698 },
-    },
-    -- ADD NEW FANGAMES BELOW:
-    {
-        folder   = "st",
-        placeIds = { 72577867400900, 129965911879791 },
-    },
-}
-
-local selectedFolder = "EToH"  -- default fallback
-for _, gc in ipairs(gameConfigs) do
-    for _, pid in ipairs(gc.placeIds) do
-        if game.PlaceId == pid then
-            selectedFolder = gc.folder
-            break
-        end
-    end
-end
-
-local baseRepo    = "https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/Games/" .. selectedFolder .. "/"
-local registryUrl = baseRepo .. "TowerRegistry.lua"
--- === END FANGAME CONFIG ===
+local baseRepo = "https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/Games/EToH/"
+local registryUrl = "https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/Games/EToH/TowerRegistry.lua"
 
 local Registry
 local ok_reg, reg_src = pcall(function() return game:HttpGet(registryUrl) end)
@@ -146,57 +120,21 @@ end
 
 local currentPlaceId = game.PlaceId
 
-local function findNearestPortal(towerName)
-    local tower = workspace.Towers[towerName]
-    if not tower then return nil end
-    local refPart = tower:FindFirstChildWhichIsA("BasePart", true)
-    if not refPart then return nil end
-    local refPos = refPart.Position
-    local closest, closestDist = nil, math.huge
-    if workspace:FindFirstChild("Portals") then
-        for _, v in ipairs(workspace.Portals:GetChildren()) do
-            if v:IsA("BasePart") then
-                local dist = (v.Position - refPos).Magnitude
-                if dist < closestDist then
-                    closest = v
-                    closestDist = dist
-                end
-            end
-        end
-    end
-    return closest
-end
-
-for _, tower in ipairs(Registry.Towers) do
+for _, tower in ipairs(Registry.Towers or {}) do
     local n = tower.name
     local placeId = Registry.Categories[tower.category]
     if placeId ~= currentPlaceId then continue end
     SuggestedTimes[n] = tower.suggestedTime
     local tpName = getTpFrameName(n)
-    if selectedFolder == "st" then
-        local portalIndex = tower.portalIndex
-        TowerConfigs[n] = {
-            tpFrame = function()
-                if portalIndex then return workspace.Portals:GetChildren()[portalIndex] end
-                return findNearestPortal(tpName)
-            end,
-            teleportTo = function()
-                if portalIndex then return workspace.Portals:GetChildren()[portalIndex] end
-                return findNearestPortal(tpName)
-            end,
-            routeUrl = baseRepo .. tower.category .. "/" .. n .. ".lua",
-        }
-    else
-        TowerConfigs[n] = {
-            tpFrame    = function() return workspace.Towers[tpName].Teleporter.Teleporter.TPFRAME end,
-            teleportTo = function() return workspace.Towers[tpName].Teleporter.TeleportTo end,
-            routeUrl   = baseRepo .. tower.category .. "/" .. n .. ".lua",
-        }
-    end
+    TowerConfigs[n] = {
+        tpFrame    = function() return workspace.Towers[tpName].Teleporter.Teleporter.TPFRAME end,
+        teleportTo = function() return workspace.Towers[tpName].Teleporter.TeleportTo end,
+        routeUrl   = baseRepo .. tower.category .. "/" .. n .. ".lua",
+    }
     table.insert(DropdownValues, n)
 end
 
-for _, tr in ipairs(Registry.TowerRush) do
+for _, tr in ipairs(Registry.TowerRush or {}) do
     local n = tr.name
     local placeId = Registry.Categories[tr.category]
     if placeId ~= currentPlaceId then continue end
@@ -1732,7 +1670,7 @@ MenuGroup:AddToggle("AutoExecute", {
                     end
                 end)
                 SCRIPT_KEY = "KEYLESS"
-                loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/0541c1dfb789f231c7d85e04604e4146558377cc11d3c771c043d7bfce8d9c03/download"))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/SC%20Script.lua"))()
             ]])
         end
     end,
