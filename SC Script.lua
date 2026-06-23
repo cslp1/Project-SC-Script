@@ -74,8 +74,34 @@ local Options  = Library.Options
 local isAutoPlaying = false
 local currentResolvedSteps = nil
 
-local baseRepo = "https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/Games/EToH/"
-local registryUrl = "https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/Games/EToH/TowerRegistry.lua"
+-- === FANGAME CONFIG ===
+-- To add a new fangame: add a new entry to gameConfigs with the folder name
+-- and all Place IDs used by that game, then create the matching files in the repo.
+local gameConfigs = {
+    {
+        folder   = "EToH",
+        placeIds = { 9070657865, 9070979698 },
+    },
+    {
+        folder   = "st",
+        placeIds = { 72577867400900 },
+    },
+}
+}
+
+local selectedFolder = "EToH"  -- default fallback
+for _, gc in ipairs(gameConfigs) do
+    for _, pid in ipairs(gc.placeIds) do
+        if game.PlaceId == pid then
+            selectedFolder = gc.folder
+            break
+        end
+    end
+end
+
+local baseRepo    = "https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/Games/" .. selectedFolder .. "/"
+local registryUrl = baseRepo .. "TowerRegistry.lua"
+-- === END FANGAME CONFIG ===
 
 local Registry
 local ok_reg, reg_src = pcall(function() return game:HttpGet(registryUrl) end)
@@ -120,7 +146,7 @@ end
 
 local currentPlaceId = game.PlaceId
 
-for _, tower in ipairs(Registry.Towers or {}) do
+for _, tower in ipairs(Registry.Towers) do
     local n = tower.name
     local placeId = Registry.Categories[tower.category]
     if placeId ~= currentPlaceId then continue end
@@ -134,7 +160,7 @@ for _, tower in ipairs(Registry.Towers or {}) do
     table.insert(DropdownValues, n)
 end
 
-for _, tr in ipairs(Registry.TowerRush or {}) do
+for _, tr in ipairs(Registry.TowerRush) do
     local n = tr.name
     local placeId = Registry.Categories[tr.category]
     if placeId ~= currentPlaceId then continue end
@@ -1670,7 +1696,7 @@ MenuGroup:AddToggle("AutoExecute", {
                     end
                 end)
                 SCRIPT_KEY = "KEYLESS"
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/cslp1/Project-SC-Script/refs/heads/main/SC%20Script.lua"))()
+                loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/0541c1dfb789f231c7d85e04604e4146558377cc11d3c771c043d7bfce8d9c03/download"))()
             ]])
         end
     end,
