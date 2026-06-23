@@ -10,6 +10,7 @@ local Categories = {
     Zone1 = 9071001075,
     Zone2 = 9071001366,
     Zone3 = 9071001563,
+    Zone7 = 9071002677,
     ["Pit-of-Misery"] = 15639952229,
     ["100M-Event-Replay"] = 115856553162061,
 }
@@ -44,6 +45,9 @@ return {
         { name = "ToDT",  category = "Zone2", suggestedTime = { min = "5", sec = "0" } },
         --Zone 3
         { name = "ToHH",  category = "Zone3", suggestedTime = { min = "3", sec = "0" } },
+        --Zone 7
+        { name = "ToFM",  category = "Zone7", suggestedTime = { min = "3", sec = "0" } },
+        { name = "ToUA",  category = "Zone7", suggestedTime = { min = "3", sec = "0" } },
         --Pit of Misery
         { name = "ToVH",  category = "Pit-of-Misery", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToTRP",  category = "Pit-of-Misery", suggestedTime = { min = "3", sec = "0" } },
