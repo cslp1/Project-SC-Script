@@ -63,7 +63,6 @@ return {
         { name = "ToWM",  category = "Pit-of-Misery", suggestedTime = { min = "3", sec = "0" } },
         { name = "ToBF",  category = "Pit-of-Misery", suggestedTime = { min = "3", sec = "0" } },
     },
- }
     TowerRush = {
         { name = "PoMTR", category = "Pit-of-Misery", suggestedTime = { min = "200", sec = "0" }, isTowerRush = true, },
     },
