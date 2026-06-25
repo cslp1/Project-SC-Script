@@ -931,6 +931,21 @@ TowerBox:AddButton({
             return
         end
 
+        -- Load the route once and reuse it for every repeat. Re-running loadstring each
+        -- repeat fails on executors that throttle/forward loadstring to a server.
+        local fn, fnErr = loadstring(routeSrc)
+        if not fn then
+            Library:Notify({ Title = "Auto Play", Description = "Parse failed: " .. tostring(fnErr), Duration = 5 })
+            isAutoPlaying = false
+            return
+        end
+        local okLoad, getCheckpoints = pcall(fn)
+        if not okLoad or type(getCheckpoints) ~= "function" then
+            Library:Notify({ Title = "Auto Play", Description = "Load failed: " .. tostring(getCheckpoints), Duration = 5 })
+            isAutoPlaying = false
+            return
+        end
+
         local repeatCount = math.max(math.floor(tonumber(Library.Options.RepeatCount.Value) or 1), 1)
         local totalReqMin = tonumber(Library.Options.CompletionMin.Value) or 0
         local totalReqSec = tonumber(Library.Options.CompletionSec.Value) or 0
@@ -939,10 +954,8 @@ TowerBox:AddButton({
 
         for rep = 1, repeatCount do
         local repTag = repeatCount > 1 and (" [" .. rep .. "/" .. repeatCount .. "]") or ""
-        -- Only the first run enters from the lobby teleporter. Repeats simply re-walk the
-        -- route from inside the tower -- the route walk flies the character (noclip is on)
-        -- back to the first checkpoint -- so it never returns to the lobby.
-        if rep == 1 then
+        -- Each run is a full Auto Play pass -- go to the teleporter, enter the tower, and
+        -- walk the route -- the same as pressing Auto Play again after a completion.
         local ok, tpFrame = pcall(config.tpFrame)
         if not ok or not tpFrame then
             Library:Notify({ Title = "Auto Play", Description = selected .. " teleporter not found!", Duration = 3 })
@@ -1001,21 +1014,7 @@ TowerBox:AddButton({
         until hrp and (hrp.Position - posBeforeTP).Magnitude > 0.1
         VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.W, false, game)
         if checkDied() then return end
-        end -- first-run lobby entry only
         local deadline = os.clock() + perRepeatTime
-        Library:Notify({ Title = "Auto Play", Description = "Loading " .. selected .. " route...", Duration = 3 })
-        local fn, fnErr = loadstring(routeSrc)
-        if not fn then
-            Library:Notify({ Title = "Auto Play", Description = "Parse failed: " .. tostring(fnErr), Duration = 5 })
-            isAutoPlaying = false
-            return
-        end
-        local ok1, getCheckpoints = pcall(fn)
-        if not ok1 or type(getCheckpoints) ~= "function" then
-            Library:Notify({ Title = "Auto Play", Description = "Load failed: " .. tostring(getCheckpoints), Duration = 5 })
-            isAutoPlaying = false
-            return
-        end
         local checkpoints
         local lastErr = ""
         local lastNotify = os.clock()
