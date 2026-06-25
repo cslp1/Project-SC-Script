@@ -955,13 +955,46 @@ TowerBox:AddButton({
         for rep = 1, repeatCount do
         local repTag = repeatCount > 1 and (" [" .. rep .. "/" .. repeatCount .. "]") or ""
         if rep > 1 then
-            -- Give the game ~5s to process the previous win before re-entering.
-            Library:Notify({ Title = "Auto Play", Description = "Next run in 5s..." .. repTag, Duration = 4 })
-            local waitUntil = os.clock() + 5
-            while os.clock() < waitUntil do
-                if checkDied() then return end
-                task.wait(0.1)
+            -- Completing a tower sends us back to the lobby, which respawns the character.
+            -- Wait for that respawn to finish (so it can't interrupt the next run mid-route),
+            -- let it settle, then re-apply the autoplay movement setup on the fresh
+            -- character -- the same state the first run starts in.
+            Library:Notify({ Title = "Auto Play", Description = "Waiting for respawn before next run..." .. repTag, Duration = 4 })
+            local respawned = false
+            local caConn = player.CharacterAdded:Connect(function() respawned = true end)
+            local t0 = os.clock()
+            while not respawned and os.clock() - t0 < 15 do
+                -- Ignore the win/respawn death here; only stop if the user actually exits.
+                if died and stopReason == "exited" then caConn:Disconnect() checkDied() return end
+                task.wait(0.2)
             end
+            caConn:Disconnect()
+            char = player.Character or player.CharacterAdded:Wait()
+            char:WaitForChild("HumanoidRootPart", 10)
+            task.wait(1)
+            char = player.Character
+            hrp  = char and char:FindFirstChild("HumanoidRootPart")
+            if not hrp then
+                Library:Notify({ Title = "Auto Play", Description = "Character didn't respawn, stopping!", Duration = 3 })
+                stopAutoNoclip()
+                isAutoPlaying = false
+                return
+            end
+            local hum = char:FindFirstChildOfClass("Humanoid")
+            if hum then
+                hum:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+                if hum.Sit then hum.Sit = false end
+                hum.PlatformStand = true
+            end
+            -- Re-arm death detection on the fresh character; ignore the win/respawn itself.
+            died = false
+            stopReason = "died"
+            if diedConn then diedConn:Disconnect() end
+            diedConn = hum and hum.Died:Connect(function()
+                died = true
+                stopReason = "died"
+                diedConn:Disconnect()
+            end)
         end
         -- Each run is a full Auto Play pass -- go to the teleporter, enter the tower, and
         -- walk the route -- the same as pressing Auto Play again after a completion.
