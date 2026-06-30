@@ -1453,6 +1453,19 @@ PlayerBox:AddToggle("Noclip", {
         end
         conns[#conns + 1] = RunService.Stepped:Connect(sweep)
         conns[#conns + 1] = RunService.Heartbeat:Connect(sweep)
+
+        -- Anti-fling: with collision off, a jump-booster (or any impulse) can launch the
+        -- character into the void with nothing to stop it. Cap the velocity so it can't
+        -- reach fling speeds. 100 studs/s is at/above normal walk, jump and fly.
+        conns[#conns + 1] = RunService.Heartbeat:Connect(function()
+            local char = Players.LocalPlayer.Character
+            local h = char and char:FindFirstChild("HumanoidRootPart")
+            if not h then return end
+            local v = h.AssemblyLinearVelocity
+            if v.Magnitude > 100 then
+                h.AssemblyLinearVelocity = v.Unit * 100
+            end
+        end)
     end,
 }):AddKeyPicker("NoclipKeybind", {
     Text            = "Noclip Keybind",
